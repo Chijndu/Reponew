@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    width: 100dvw;
+    background-color: #e9ecf1;
+
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.left, .right, form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.left{
+    width: 500px;
+    align-items: flex-start;
+}
+.left h1{
+    font-family: "facebook lettet faces";
+    font-size: 55px;
+    color: #176fe2;
+}
+.left p{
+    font-size: 20px;
+    color: #1c1e21;
+    height: 200px;
+    font-family: arial;
+}
+.right{
+    width: 400px;
+}
+form{
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.17);
+}
+form input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #a09f9f;
+    outline: none;
+    font-size: 17px;
+}
+.loginBtn{
+    background-color: #1877f2;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 6px;
+    color: white;
+    font-size: 19px;
+    font-family: arial;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.loginBtn:hover{
+    background-color: #4257b2;
+}
+.forget{
+    margin: 15px 0;
+    text-decoration: none;
+    color: #1877f2;
+    font-family: arial;
+    font-size: 15px;
+}
+.signupBtn{
+    background-color: #42b72a;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: arial;
+    transition: 0.5s;
+}
+.signupBtn:hover{
+    background-color: green;
+}
+.signup{
+    padding-top: 20px;
+    border-top: 1px solid #a09f9f;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header{
+    margin: 15px 0;
+    font-size: 20px;
+    font-family: arial;
+}
+@media(max-width:950px){
+    .container{
+        flex-direction: column;
+    }
+    .left{
+        width: 400px;
+        align-content: center;
+        align-items: center;
+    }
+    .left p{
+        height: 75px;
+    }
+}
+
